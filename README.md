@@ -1,2 +1,2 @@
 # Example
-An example greeter plugin
+Recommends boss gear for the selected boss using equipment from the wiki.
