@@ -1,13 +1,13 @@
-package com.example;
+package com.bossgear;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class BossGearPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(BossGearPlugin.class);
 		RuneLite.main(args);
 	}
 }
