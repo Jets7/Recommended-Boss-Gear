@@ -8,12 +8,12 @@ import net.runelite.client.config.ConfigItem;
 public interface BossGearConfig extends Config
 {
 	@ConfigItem(
-		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		keyName = "temp",
+		name = "Temporary Configuration",
+		description = "Temporary configuration item"
 	)
 	default String greeting()
 	{
-		return "Hello";
+		return "Temp";
 	}
 }

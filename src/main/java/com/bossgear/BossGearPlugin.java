@@ -1,5 +1,6 @@
 package com.bossgear;
 
+import com.bossgear.ui.BossGearPluginPanel;
 import com.google.inject.Provides;
 import javax.inject.Inject;
 
@@ -46,7 +47,6 @@ public class BossGearPlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.info("Example started!");
 		this.panel = new BossGearPluginPanel(this, itemManager);
 		final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "/bossgear_icon.png");
 
@@ -63,7 +63,7 @@ public class BossGearPlugin extends Plugin
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.info("Example stopped!");
+		log.info("On shutdown");
 	}
 
 	@Subscribe
@@ -71,7 +71,7 @@ public class BossGearPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			//client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
 		}
 	}
 
