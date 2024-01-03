@@ -22,7 +22,7 @@ import java.awt.image.BufferedImage;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Recommended Boss Gear"
 )
 public class BossGearPlugin extends Plugin
 {
